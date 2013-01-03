@@ -1,0 +1,120 @@
+@import 'bootstrap.less';
+
+@blue: #50B5C5;
+@green: #A7C539;
+
+.borAron{
+	-webkit-border-radius: 13px;
+	border-radius: 13px; 
+}
+
+body{
+	background:url('../img/wood_pattern.png');
+}
+
+.centrer{
+	width: 960px;
+	margin: 0em auto;
+}
+
+header{
+	background-color: @white;
+	border-bottom: 5px solid #A19253;
+	padding-top: 1em;
+	#titre{
+		.makeColumn(6);
+	}
+	section{
+		.makeColumn(3);
+		margin: 10px auto 10px 20px;
+		height: 66px;
+		p{
+			.makeColumn(3);
+			margin-left: 0em;
+			height: 66px;
+			text-align: right;
+		}
+	}
+	nav{
+		.makeColumn(12);
+		h2{
+			font-size: 1em;
+		}
+	}
+}
+.lvl1{
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 1.5%;
+	width: 15%;
+	float: left;
+}
+.lvl1 li{
+	//display: none;
+}
+
+#panier{
+	.makeColumn(3);
+	margin-top: 1.5em;
+	background-color: @white;
+	-webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3); 
+	border: 2px solid #A19253;
+	overflow: hidden;
+	.borAron;
+	h1{
+		font-size: 1.2em;
+		margin: 0em auto 15px;
+		text-align: center;
+		color: @white;
+		background-color: @blue;
+	}
+	p{
+		margin: 0em 0em 0.3em 1em;
+	}
+}
+
+.produit{
+	.makeColumn(3);
+	.borAron;
+	overflow: hidden;
+	background-color: @white;
+	margin-bottom: 20px;
+	h1{
+		font-size: 1.2em;
+		margin: 0em auto 15px;
+		text-align: center;
+		color: @white;
+		background-color: @blue;
+	}
+	img{
+		display: block;
+		margin: 0em auto;
+	}
+	h2{
+		text-align: center;
+		color: @green;
+	}
+	.input-mini{
+		text-align: right;
+	}
+	.quantite{
+		display: block;
+		width: 170px;
+		margin: 0em auto 10px;
+	}
+	.submit{
+		display: block;
+		width: 170px;
+		height: 40px;
+		font-size: 1.3em;
+		margin: 0em auto 10px;
+	}
+}
+#liquidation{
+	.clearfix;
+}
+
+footer{
+	background-color: @white;
+}
