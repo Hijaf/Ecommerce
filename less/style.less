@@ -22,18 +22,11 @@ header{
 	border-bottom: 5px solid #A19253;
 	padding-top: 1em;
 	#titre{
-		.makeColumn(6);
+		.makeColumn(5);
 	}
 	section{
-		.makeColumn(3);
+		.makeColumn(4);
 		margin: 10px auto 10px 20px;
-		height: 66px;
-		p{
-			.makeColumn(3);
-			margin-left: 0em;
-			height: 66px;
-			text-align: right;
-		}
 	}
 	nav{
 		.makeColumn(12);
@@ -49,8 +42,13 @@ header{
 	width: 15%;
 	float: left;
 }
-.lvl1 li{
-	//display: none;
+.lvl2{
+	display: none;
+}
+.lvl1:hover{
+	.lvl2{
+		display: block;
+	}
 }
 
 #panier{
@@ -58,13 +56,14 @@ header{
 	margin-top: 1.5em;
 	background-color: @white;
 	-webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
 	box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3); 
-	border: 2px solid #A19253;
 	overflow: hidden;
 	.borAron;
 	h1{
 		font-size: 1.2em;
 		margin: 0em auto 15px;
+		padding: 10px;
 		text-align: center;
 		color: @white;
 		background-color: @blue;
@@ -72,6 +71,9 @@ header{
 	p{
 		margin: 0em 0em 0.3em 1em;
 	}
+}
+section>h1{
+	.makeColumn(12);
 }
 
 .produit{
@@ -83,6 +85,7 @@ header{
 	h1{
 		font-size: 1.2em;
 		margin: 0em auto 15px;
+		padding: 10px;
 		text-align: center;
 		color: @white;
 		background-color: @blue;
@@ -91,9 +94,21 @@ header{
 		display: block;
 		margin: 0em auto;
 	}
+	.reduc{
+		text-align: center;
+		color: #50B5C5;
+	}
 	h2{
+		margin: 0.5em;
+	}
+	.prix{
 		text-align: center;
 		color: @green;
+		span{
+			color: #50B5C5;
+			text-decoration: line-through;
+			font-size: 70%;
+		}
 	}
 	.input-mini{
 		text-align: right;
@@ -106,7 +121,6 @@ header{
 	.submit{
 		display: block;
 		width: 170px;
-		height: 40px;
 		font-size: 1.3em;
 		margin: 0em auto 10px;
 	}

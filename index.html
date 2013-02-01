@@ -1,9 +1,21 @@
-<!DOCTYPE HTML>
-<html lang="fr">
-<head>
-	<meta charset="UTF-8">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>SeBio</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<meta name="description" content="Site de de vente en ligne de produits Bio">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <!--Palette de couleur
 	#945457
@@ -13,6 +25,11 @@
 	#A19253
 -->
 <body>
+	<!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
 	<header class="clearfix">
 		<div class="centrer">
 			<h1 id="titre"><img src="./img/sebio.png" alt="Logo SeBio"/></h1>
@@ -54,7 +71,7 @@
 				<ul>
 					<li class="lvl1">
 						<h2>Bons Plans</h2>
-						<ul>
+						<ul class="lvl2">
 							<li>Nouveautés</li>
 							<li>Articles en promotion</li>
 							<li>Articles en liquidation</li>
@@ -62,18 +79,8 @@
 						</ul>
 					</li>
 					<li class="lvl1">
-						<h2>Bébés et enfants</h2>
-						<ul>
-							<li>Grossesse et allaitement</li>
-							<li>Bébé et Enfant</li>
-							<li>Couches</li>
-							<li>Aliments bio pour bébé</li>
-							<li>Liste de naissance</li>
-						</ul>
-					</li>
-					<li class="lvl1">
 						<h2>Bien-être</h2>
-						<ul>
+						<ul class="lvl2">
 							<li>Hygiène et Soin</li>
 							<li>Aromathérapie</li>
 							<li>Fleurs de Bach</li>
@@ -82,15 +89,25 @@
 					</li>
 					<li class="lvl1">
 						<h2>Mode</h2>
-						<ul>
+						<ul class="lvl2">
 							<li>Vêtements</li>
 							<li>Tissus</li>
 							<li>La queue du chat hiver 12/13</li>
 						</ul>
 					</li>
 					<li class="lvl1">
+						<h2>Bébés et enfants</h2>
+						<ul class="lvl2">
+							<li>Grossesse et allaitement</li>
+							<li>Bébé et Enfant</li>
+							<li>Couches</li>
+							<li>Aliments bio pour bébé</li>
+							<li>Liste de naissance</li>
+						</ul>
+					</li>
+					<li class="lvl1">
 						<h2>Maison et Loisirs</h2>
-						<ul>
+						<ul class="lvl2">
 							<li>Papeterie</li>
 							<li>Livres</li>
 							<li>Jeux et jouets</li>
@@ -100,7 +117,7 @@
 					</li>
 					<li class="lvl1">
 						<h2>Services</h2>
-						<ul>
+						<ul class="lvl2">
 							<li>Location de porte-bébés</li>
 							<li>Nos ateliers nature</li>
 						</ul>
@@ -112,164 +129,173 @@
 	<section class="centrer clearfix">
 		<section id="nouveautes" class="clearfix">
 			<h1>Nos nouveautés</h1>
-			<div class="produit">
-				<h1>Produit n°1</h1>
+			<div class="produit first">
+				<h1 title="Semelles pour chausson (Bobux) - 2 XL">Semelles pour...</h1>
 				<img src="http://placehold.it/170x150" alt="image de remplacement" class="img-rounded"/>
-				<h2 id="prix">10,90&nbsp;€</h2>
+				<h2 class="prix">10,90&nbsp;€</h2>
 				<div class="quantite input-prepend input-append">
 					<span class="add-on">Quantité&nbsp;:</span>
 					<input type="text" class="input-mini" maxlength="3" value="1"/>
-					<button class="btn" type:"button">-</button>
-					<button class="btn" type:"button">+</button>
+					<button class="btn" type="button">-</button>
+					<button class="btn" type="button">+</button>
 				</div>
-				<button class="submit btn btn-warning" type:"submit">Ajouter au panier</button>
+				<button class="submit btn btn-warning" type="submit">Ajouter au panier</button>
 			</div>
 			<div class="produit">
 				<h1>Produit n°2</h1>
 				<img src="http://placehold.it/170x150" alt="image de remplacement" class="img-rounded"/>
-				<h2 id="prix">10,90&nbsp;€</h2>
+				<h2 class="prix">10,90&nbsp;€</h2>
 				<div class="quantite input-prepend input-append">
 					<span class="add-on">Quantité&nbsp;:</span>
 					<input type="text" class="input-mini" maxlength="3" value="1"/>
-					<button class="btn" type:"button">-</button>
-					<button class="btn" type:"button">+</button>
+					<button class="btn" type="button">-</button>
+					<button class="btn" type="button">+</button>
 				</div>
-				<button class="submit btn btn-warning" type:"submit">Ajouter au panier</button>
+				<button class="submit btn btn-warning" type="submit">Ajouter au panier</button>
 			</div>
 			<div class="produit">
 				<h1>Produit n°3</h1>
 				<img src="http://placehold.it/170x150" alt="image de remplacement" class="img-rounded"/>
-				<h2 id="prix">10,90&nbsp;€</h2>
+				<h2 class="prix">10,90&nbsp;€</h2>
 				<div class="quantite input-prepend input-append">
 					<span class="add-on">Quantité&nbsp;:</span>
 					<input type="text" class="input-mini" maxlength="3" value="1"/>
-					<button class="btn" type:"button">-</button>
-					<button class="btn" type:"button">+</button>
+					<button class="btn" type="button">-</button>
+					<button class="btn" type="button">+</button>
 				</div>
-				<button class="submit btn btn-warning" type:"submit">Ajouter au panier</button>
+				<button class="submit btn btn-warning" type="submit">Ajouter au panier</button>
 			</div>
 			<div class="produit">
 				<h1>Produit n°4</h1>
 				<img src="http://placehold.it/170x150" alt="image de remplacement" class="img-rounded"/>
-				<h2 id="prix">10,90&nbsp;€</h2>
+				<h2 class="prix">10,90&nbsp;€</h2>
 				<div class="quantite input-prepend input-append">
 					<span class="add-on">Quantité&nbsp;:</span>
 					<input type="text" class="input-mini" maxlength="3" value="1"/>
-					<button class="btn" type:"button">-</button>
-					<button class="btn" type:"button">+</button>
+					<button class="btn" type="button">-</button>
+					<button class="btn" type="button">+</button>
 				</div>
-				<button class="submit btn btn-warning" type:"submit">Ajouter au panier</button>
+				<button class="submit btn btn-warning" type="submit">Ajouter au panier</button>
 			</div>
 		</section>
 		<section id="promos" class="clearfix">
 			<h1>Nos promotions</h1>
-			<div class="produit">
+			<div class="produit first">
 				<h1>Produit n°1</h1>
 				<img src="http://placehold.it/170x150" alt="image de remplacement" class="img-rounded"/>
-				<h2 id="prix">10,90&nbsp;€</h2>
+				<h2 class="reduc">Promo&nbsp;: -10%</h2>
+				<h2 class="prix"><span>10,90&nbsp;€</span> 10,90&nbsp;€</h2>
 				<div class="quantite input-prepend input-append">
 					<span class="add-on">Quantité&nbsp;:</span>
 					<input type="text" class="input-mini" maxlength="3" value="1"/>
-					<button class="btn" type:"button">-</button>
-					<button class="btn" type:"button">+</button>
+					<button class="btn" type="button">-</button>
+					<button class="btn" type="button">+</button>
 				</div>
-				<button class="submit btn btn-warning" type:"submit">Ajouter au panier</button>
+				<button class="submit btn btn-warning" type="submit">Ajouter au panier</button>
 			</div>
 			<div class="produit">
 				<h1>Produit n°2</h1>
 				<img src="http://placehold.it/170x150" alt="image de remplacement" class="img-rounded"/>
-				<h2 id="prix">10,90&nbsp;€</h2>
+				<h2 class="reduc">Promo&nbsp;: -10%</h2>
+				<h2 class="prix"><span>10,90&nbsp;€</span> 10,90&nbsp;€</h2>
 				<div class="quantite input-prepend input-append">
 					<span class="add-on">Quantité&nbsp;:</span>
 					<input type="text" class="input-mini" maxlength="3" value="1"/>
-					<button class="btn" type:"button">-</button>
-					<button class="btn" type:"button">+</button>
+					<button class="btn" type="button">-</button>
+					<button class="btn" type="button">+</button>
 				</div>
-				<button class="submit btn btn-warning" type:"submit">Ajouter au panier</button>
+				<button class="submit btn btn-warning" type="submit">Ajouter au panier</button>
 			</div>
 			<div class="produit">
 				<h1>Produit n°3</h1>
 				<img src="http://placehold.it/170x150" alt="image de remplacement" class="img-rounded"/>
-				<h2 id="prix">10,90&nbsp;€</h2>
+				<h2 class="reduc">Promo&nbsp;: -10%</h2>
+				<h2 class="prix"><span>10,90&nbsp;€</span> 10,90&nbsp;€</h2>
 				<div class="quantite input-prepend input-append">
 					<span class="add-on">Quantité&nbsp;:</span>
 					<input type="text" class="input-mini" maxlength="3" value="1"/>
-					<button class="btn" type:"button">-</button>
-					<button class="btn" type:"button">+</button>
+					<button class="btn" type="button">-</button>
+					<button class="btn" type="button">+</button>
 				</div>
-				<button class="submit btn btn-warning" type:"submit">Ajouter au panier</button>
+				<button class="submit btn btn-warning" type="submit">Ajouter au panier</button>
 			</div>
 			<div class="produit">
 				<h1>Produit n°4</h1>
 				<img src="http://placehold.it/170x150" alt="image de remplacement" class="img-rounded"/>
-				<h2 id="prix">10,90&nbsp;€</h2>
+				<h2 class="reduc">Promo&nbsp;: -10%</h2>
+				<h2 class="prix"><span>10,90&nbsp;€</span> 10,90&nbsp;€</h2>
 				<div class="quantite input-prepend input-append">
 					<span class="add-on">Quantité&nbsp;:</span>
 					<input type="text" class="input-mini" maxlength="3" value="1"/>
-					<button class="btn" type:"button">-</button>
-					<button class="btn" type:"button">+</button>
+					<button class="btn" type="button">-</button>
+					<button class="btn" type="button">+</button>
 				</div>
-				<button class="submit btn btn-warning" type:"submit">Ajouter au panier</button>
+				<button class="submit btn btn-warning" type="submit">Ajouter au panier</button>
 			</div>
 		</section>
 		<section id="liquidation">
 			<h1>Nos liquidations</h1>
-			<div class="produit">
+			<div class="produit first">
 				<h1>Produit n°1</h1>
 				<img src="http://placehold.it/170x150" alt="image de remplacement" class="img-rounded"/>
-				<h2 id="prix">10,90&nbsp;€</h2>
+				<h2 class="reduc">Promo&nbsp;: -10%</h2>
+				<h2 class="prix"><span>10,90&nbsp;€</span> 10,90&nbsp;€</h2>
 				<div class="quantite input-prepend input-append">
 					<span class="add-on">Quantité&nbsp;:</span>
 					<input type="text" class="input-mini" maxlength="3" value="1"/>
-					<button class="btn" type:"button">-</button>
-					<button class="btn" type:"button">+</button>
+					<button class="btn" type="button">-</button>
+					<button class="btn" type="button">+</button>
 				</div>
-				<button class="submit btn btn-warning" type:"submit">Ajouter au panier</button>
+				<button class="submit btn btn-warning" type="submit">Ajouter au panier</button>
 			</div>
 			<div class="produit">
 				<h1>Produit n°2</h1>
 				<img src="http://placehold.it/170x150" alt="image de remplacement" class="img-rounded"/>
-				<h2 id="prix">10,90&nbsp;€</h2>
+				<h2 class="reduc">Promo&nbsp;: -10%</h2>
+				<h2 class="prix"><span>10,90&nbsp;€</span> 10,90&nbsp;€</h2>
 				<div class="quantite input-prepend input-append">
 					<span class="add-on">Quantité&nbsp;:</span>
 					<input type="text" class="input-mini" maxlength="3" value="1"/>
-					<button class="btn" type:"button">-</button>
-					<button class="btn" type:"button">+</button>
+					<button class="btn" type="button">-</button>
+					<button class="btn" type="button">+</button>
 				</div>
-				<button class="submit btn btn-warning" type:"submit">Ajouter au panier</button>
+				<button class="submit btn btn-warning" type="submit">Ajouter au panier</button>
 			</div>
 			<div class="produit">
 				<h1>Produit n°3</h1>
 				<img src="http://placehold.it/170x150" alt="image de remplacement" class="img-rounded"/>
-				<h2 id="prix">10,90&nbsp;€</h2>
+				<h2 class="reduc">Promo&nbsp;: -10%</h2>
+				<h2 class="prix"><span>10,90&nbsp;€</span> 10,90&nbsp;€</h2>
 				<div class="quantite input-prepend input-append">
 					<span class="add-on">Quantité&nbsp;:</span>
 					<input type="text" class="input-mini" maxlength="3" value="1"/>
-					<button class="btn" type:"button">-</button>
-					<button class="btn" type:"button">+</button>
+					<button class="btn" type="button">-</button>
+					<button class="btn" type="button">+</button>
 				</div>
-				<button class="submit btn btn-warning" type:"submit">Ajouter au panier</button>
+				<button class="submit btn btn-warning" type="submit">Ajouter au panier</button>
 			</div>
 			<div class="produit">
 				<h1>Produit n°4</h1>
 				<img src="http://placehold.it/170x150" alt="image de remplacement" class="img-rounded"/>
-				<h2 id="prix">10,90&nbsp;€</h2>
+				<h2 class="reduc">Promo&nbsp;: -10%</h2>
+				<h2 class="prix"><span>10,90&nbsp;€</span> 10,90&nbsp;€</h2>
 				<div class="quantite input-prepend input-append">
 					<span class="add-on">Quantité&nbsp;:</span>
 					<input type="text" class="input-mini" maxlength="3" value="1"/>
-					<button class="btn" type:"button">-</button>
-					<button class="btn" type:"button">+</button>
+					<button class="btn" type="button">-</button>
+					<button class="btn" type="button">+</button>
 				</div>
-				<button class="submit btn btn-warning" type:"submit">Ajouter au panier</button>
+				<button class="submit btn btn-warning" type="submit">Ajouter au panier</button>
 			</div>
 		</section>
 	</section>
 	<footer>
 		<p class="centrer"><a href="#">Annonce Légale</a> - <a href="#">Conditions générales de vente</a></p>
 	</footer>
-	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
 	<script type="text/javascript" src="./js/bootstrap.js"></script>
-	<script type="text/javascript" src="./js/bootstrap-tab.js"></script>
+	<!--<script type="text/javascript" src="./js/bootstrap-tab.js"></script>-->
 	<script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
