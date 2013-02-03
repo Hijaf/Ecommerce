@@ -22,11 +22,29 @@ header{
 	border-bottom: 5px solid #A19253;
 	padding-top: 1em;
 	#titre{
-		.makeColumn(5);
+		.makeColumn(6);
 	}
-	section{
-		.makeColumn(4);
-		margin: 10px auto 10px 20px;
+	#compte{
+		.makeColumn(3);
+		margin-top: 1.5em;
+		background-color: @white;
+		-webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3); 
+		overflow: hidden;
+		.borAron;
+		h2{
+			font-size: 1.1em;
+			margin: 0em auto 5px;
+			padding: 5px;
+			text-align: center;
+			color: @white;
+			background-color: @blue;
+		}
+		p{
+			margin: 0em 1em 0.5em 1em;
+			text-align: center;
+		}
 	}
 	nav{
 		.makeColumn(12);
@@ -60,10 +78,10 @@ header{
 	box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3); 
 	overflow: hidden;
 	.borAron;
-	h1{
-		font-size: 1.2em;
-		margin: 0em auto 15px;
-		padding: 10px;
+	h2{
+		font-size: 1.1em;
+		margin: 0em auto 5px;
+		padding: 5px;
 		text-align: center;
 		color: @white;
 		background-color: @blue;
@@ -82,7 +100,7 @@ section>h1{
 	overflow: hidden;
 	background-color: @white;
 	margin-bottom: 20px;
-	h1{
+	h2{
 		font-size: 1.2em;
 		margin: 0em auto 15px;
 		padding: 10px;
@@ -98,8 +116,10 @@ section>h1{
 		text-align: center;
 		color: #50B5C5;
 	}
-	h2{
-		margin: 0.5em;
+	p{
+		margin: 0.3em;
+		font-size: 1.5em;
+		font-weight:bold;
 	}
 	.prix{
 		text-align: center;
@@ -125,10 +145,98 @@ section>h1{
 		margin: 0em auto 10px;
 	}
 }
+
+.inscrip{
+	.makeColumn(6);
+	background-color: @white;
+	.borAron;
+	overflow: hidden;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	h2{
+		font-size: 1.2em;
+		margin: 0em auto 15px;
+		padding: 10px;
+		text-align: center;
+		color: @white;
+		background-color: @blue;
+	}
+}
+
+.infoPerso{
+	.makeColumn(12);
+	background-color: @white;
+	.borAron;
+	overflow: hidden;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	h2{
+		font-size: 1.2em;
+		margin: 0em auto 15px;
+		padding: 10px;
+		text-align: center;
+		color: @white;
+		background-color: @blue;
+	}
+	address{
+		.makeColumn(6);
+		p{
+			margin: 0.4em 0;
+		}
+	}
+	ul{
+		.makeColumn(6);
+		margin: 0 0 20px 0;
+		padding-left: 0;
+		h3{
+			margin-top: 0.4em;
+			font-size: 1.1em;
+		}
+		li{
+			margin: 5px 0;
+		}
+	}
+	.first{
+		margin-left: 20px;
+		input{
+			margin-top:10px;
+		}
+	}
+}
+
 #liquidation{
 	.clearfix;
 }
 
 footer{
+	border-top: 5px solid #A19253;
 	background-color: @white;
+	overflow: hidden;
+	h1{
+		font-size: 1.1em;
+	}
+	ul{
+		padding: 0px;
+		margin: 0px;
+	}
+	.centrer{
+		div{
+			.makeColumn(6);
+		}
+		.col{
+			.makeColumn(6);
+			li{
+				.makeColumn(3);
+				margin: 0.67em 0 0.67em 20px;
+				font-weight: bold;
+			}
+			li:first-child{
+				margin-left: 0;
+			}
+			img{
+				margin-top: 0.5em;
+				display: block;
+			}
+		}
+	}
 }
